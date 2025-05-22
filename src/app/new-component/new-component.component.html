@@ -1,0 +1,27 @@
+<!-- details.component.html -->
+<div class="details-wrapper">
+    <div class="profile-pic">
+        <img src="assets/Images/1000116409.jpg" alt="Profile Picture" class="profile-img">
+    </div>
+    <div class="profile-info">
+        <h2>Hemant Mishra</h2>
+        <h4>Full Stack Developer</h4>
+        <p>
+            I'm a passionate developer who loves solving problems and building clean,
+            efficient web applications. I have a strong background in .NET backend
+            development and I'm learning modern frontend frameworks like Angular.
+        </p>
+        <h4>Key Skills:</h4>
+        <button class="toggle-btn" (click)="toggleSkills()">
+            {{ showSkills ? 'Hide Skills' : 'Show Skills' }}
+        </button>
+
+        <ul *ngIf="showSkills">
+            <li *ngFor="let skill of skills">{{ skill }}</li>
+        </ul>
+
+
+        <p><strong>Email:</strong> hemant.mishra&#64;locobuzz.com</p>
+        <p><strong>Location:</strong> Mumbai, Maharashtra</p>
+    </div>
+</div>
