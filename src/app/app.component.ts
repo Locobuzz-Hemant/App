@@ -6,6 +6,8 @@ import { Comp3Component } from './comp3/comp3.component';
 
 
 
+
+
 @Component({
   selector: 'app-root',
   imports: [RouterOutlet,NewComponentComponent,Comp2Component,Comp3Component],
